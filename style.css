@@ -37,7 +37,7 @@ header {
     margin: 0;
 }
 
-.vspacer {
+.hspacer {
     flex: 0.5;
 }
 
@@ -88,6 +88,10 @@ article {
     color: #6fb3b8;
 }
 
+#articles {
+    min-height: calc(100vh - 600px);
+}
+
 article {
     line-height: 40px;
     padding-bottom: 150px;
@@ -120,7 +124,8 @@ hr {
     margin: 50px auto;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
     width: calc(100% - 0px);
     padding: 8px 0;
     margin: 8px 0;
@@ -134,7 +139,8 @@ input[type="text"] {
     font-size: 1.2em;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus {
     border-bottom: 3px solid #e1a278;
     color: #e1a278;
 }
@@ -164,6 +170,37 @@ h4 {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 10px;
+}
+
+footer > p {
+    font-size: 1.4em;
+    font-family: "Roboto";
+    color: #388087;
+    margin-bottom: 0;
+}
+
+#subscribe {
+    display: flex;
+    gap: 0.5em;
+}
+
+#email {
+    flex: 1;
+}
+
+.subs-button {
+    width: 100px;
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: "Roboto";
+    color: #388087;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.subs-button:hover {
+    color: #e1a278;
 }
 
 @media screen and (max-width: 1000px) {

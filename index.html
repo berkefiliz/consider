@@ -9,7 +9,7 @@
     </head>
     <body>
         <div id="container">
-            <div class="vspacer"></div>
+            <div class="hspacer"></div>
             <div id="content">
                 <header>
                     <h1 id="header-text">Consider</h1>
@@ -23,8 +23,31 @@
                     oninput="makeArticlesList()"
                 />
                 <div id="articles"></div>
+                <footer>
+                    <p>Want to be informed about new posts?</p>
+                    <form id="subscribe" method="post" action="subscribe.php">
+                        <input
+                            id="email"
+                            type="email"
+                            name="email"
+                            placeholder="your.email@example.com"
+                        />
+                        <input
+                            type="submit"
+                            name="subscribe"
+                            class="subs-button"
+                            value="Subscribe"
+                        />
+                        <input
+                            type="submit"
+                            name="subscribe"
+                            class="subs-button"
+                            value="Unsubscribe"
+                        />
+                    </form>
+                </footer>
             </div>
-            <div class="vspacer"></div>
+            <div class="hspacer"></div>
         </div>
     </body>
 </html>
