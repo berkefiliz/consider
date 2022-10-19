@@ -31,9 +31,7 @@
                     />
                     <h4>
                         Memes make great points. -
-                        <a
-                            href="https://imgflip.com/i/4wtbv4"
-                            target="_blank"
+                        <a href="https://imgflip.com/i/4wtbv4" target="_blank"
                             >LoganNoah</a
                         >
                     </h4>
@@ -260,5 +258,85 @@
             </div>
             <div class="hspacer"></div>
         </div>
+        <div id="snackbar">This site definitely doesn't use any cookies!</div>
     </body>
 </html>
+
+<!-- Post-specific joke -->
+
+<style>
+    #snackbar {
+        font-family: "Roboto";
+        font-size: 1.4em;
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+    }
+
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 6.5s;
+        animation: fadein 0.5s, fadeout 0.5s 6.5s;
+    }
+
+    @-webkit-keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+</style>
+
+<script>
+    var sb = document.getElementById("snackbar");
+    sb.className = "show";
+    setTimeout(function () {
+        sb.className = sb.className.replace("show", "");
+    }, 7000);
+</script>
