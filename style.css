@@ -67,7 +67,7 @@ tr {
 }
 
 .article-date {
-    width: 200px;
+    width: 230px;
     font-family: "Courier Prime";
 }
 
@@ -145,7 +145,8 @@ input[type="email"]:focus {
     color: #e1a278;
 }
 
-img {
+img,
+.youtube {
     max-width: 50%;
     display: block;
     margin-left: auto;
@@ -156,8 +157,8 @@ img {
     border-radius: 5px;
     transition: border-color 0.2s ease-in-out;
 }
-
-img:hover {
+img:hover,
+.youtube:hover {
     border: 5px solid #e1a278;
 }
 
@@ -201,6 +202,17 @@ footer > p {
 
 .subs-button:hover {
     color: #e1a278;
+}
+
+.checkmark {
+    color: transparent;
+    transition: none;
+    cursor: default;
+    font-size: 0;
+}
+.checkmark:visited {
+    color: #e1a278;
+    font-size: 1.6em;
 }
 
 @media screen and (max-width: 1000px) {

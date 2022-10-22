@@ -12,6 +12,9 @@ function makeArticlesList() {
                 post.link ? "" : "style='color: lightgray'"
             }>
                 ${post.date}
+                <a ${
+                    post.link ? "href=posts/" + post.link : ""
+                } class='checkmark'> &#10003</a>
             </div>
             <div class="article-name">
                 <a ${post.link ? "href=posts/" + post.link : ""} ${
