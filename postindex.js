@@ -1,7 +1,12 @@
 POSTS = [
     {
-        title: "An ode to the professional dragon hunters",
+        title: "Moon landing was the first alien invasion we witnessed",
         date: "2022/--/--",
+        link: null,
+    },
+    {
+        title: "We are livestock animals from the perspective of a tree",
+        date: "2022/11/--",
         link: null,
     },
     {

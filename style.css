@@ -67,7 +67,7 @@ tr {
 }
 
 .article-date {
-    width: 230px;
+    width: 200px;
     font-family: "Courier Prime";
 }
 
@@ -202,17 +202,6 @@ footer > p {
 
 .subs-button:hover {
     color: #e1a278;
-}
-
-.checkmark {
-    color: transparent;
-    transition: none;
-    cursor: default;
-    font-size: 0;
-}
-.checkmark:visited {
-    color: #e1a278;
-    font-size: 1.6em;
 }
 
 @media screen and (max-width: 1000px) {
