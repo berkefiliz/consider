@@ -5,7 +5,7 @@ function makeArticlesList() {
     searchbar.value = search;
     articles.innerHTML = "";
     POSTS.forEach((post) => {
-        if (!search || post.title.toLowerCase().includes(search))
+        if (!search || post.title.toLowerCase().includes(search.trim()))
             articles.innerHTML += `
         <div class="article">
             <div class="article-date" ${
@@ -18,11 +18,11 @@ function makeArticlesList() {
                 post.link ? "" : "style='color: lightgray'"
             }>
                     ${post.title.replaceAll(
-                        search,
+                        search.trim(),
                         "<span style='text-decoration: underline; filter: brightness(" +
                             (post.link ? "125" : "90") +
                             "%);'>" +
-                            search +
+                            search.trim() +
                             "</span>"
                     )}
                 </a>

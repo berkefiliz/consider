@@ -145,8 +145,7 @@ input[type="email"]:focus {
     color: #e1a278;
 }
 
-img,
-.youtube {
+img {
     max-width: 50%;
     display: block;
     margin-left: auto;
@@ -157,8 +156,7 @@ img,
     border-radius: 5px;
     transition: border-color 0.2s ease-in-out;
 }
-img:hover,
-.youtube:hover {
+img:hover {
     border: 5px solid #e1a278;
 }
 
