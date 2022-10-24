@@ -18,13 +18,13 @@ POSTS = [
         link: "0003_hoax_showers.html",
     },
     {
-        title: "Our socks could be interdimensional overlords",
+        title: "Socks may be interdimensional overlords",
         tab: "Sock overlords",
         date: "2022/10/23",
         link: "0002_sock_overlords.html",
     },
     {
-        title: "Vegan tomatoes do not contain animal products",
+        title: "Vegan tomatoes contain no animal products",
         tab: "Vegan tomatoes",
         date: "2022/10/14",
         link: "0001_vegan_tomatoes.html",
