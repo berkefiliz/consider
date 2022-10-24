@@ -13,9 +13,9 @@ POSTS = [
     },
     {
         title: "Showers are a hoax created by the government",
-        tab: "",
-        date: "2022/11/--",
-        link: null,
+        tab: "Hoax showers",
+        date: "2022/10/24",
+        link: "0003_hoax_showers.html",
     },
     {
         title: "Our socks could be interdimensional overlords",
