@@ -15,7 +15,7 @@ POSTS = [
         link: "0002_sock_overlords.html",
     },
     {
-        title: "Vegan tomatoes do not contain animal products ",
+        title: "Vegan tomatoes do not contain animal products",
         date: "2022/10/14",
         link: "0001_vegan_tomatoes.html",
     },
