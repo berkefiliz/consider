@@ -12,7 +12,7 @@ POSTS = [
         link: null,
     },
     {
-        title: "Showers are a hoax created by the government",
+        title: "Showers are blatantly lying to our faces",
         tab: "Hoax showers",
         date: "2022/10/24",
         link: "0003_hoax_showers.html",
@@ -98,14 +98,14 @@ function assetReload() {
     for (var cl in links) {
         var link = links[cl];
         if (link.rel === "stylesheet") {
-            link.href += "?t=" + new Date().getDate() + new Date().getHours();
+            link.href += "?t=" + new Date().getDate();
         }
     }
     var scripts = document.getElementsByTagName("script");
     for (var cl in scripts) {
         var script = scripts[cl];
         if (script.src && script.src.endsWith("functions.js")) {
-            script.src += "?t=" + new Date().getDate() + new Date().getHours();
+            script.src += "?t=" + new Date().getDate() + new Date().getMinutes();
         }
     }
 }

@@ -52,6 +52,20 @@
 </html>
 
 <script>
-    assetReload();
+    var links = document.getElementsByTagName("link");
+    for (var cl in links) {
+        var link = links[cl];
+        if (link.rel === "stylesheet") {
+            link.href += "?t=" + new Date().getDate();
+        }
+    }
+    var scripts = document.getElementsByTagName("script");
+    for (var cl in scripts) {
+        var script = scripts[cl];
+        if (script.src && script.src.endsWith("functions.js")) {
+            script.src +=
+                "?t=" + new Date().getDate() + new Date().getMinutes();
+        }
+    }
     makeArticlesList();
 </script>
