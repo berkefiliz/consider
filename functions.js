@@ -80,14 +80,32 @@ function makeArticlesList() {
 }
 
 function preparePost(i) {
+    assetReload();
     let post = POSTS[POSTS.length - i];
     let header = document.getElementById("header");
     header.innerHTML = `
         <a href="/index.html" id="header-text">< Get out</a>
         <h2 id="subheader"></h2>
-    `
+    `;
     let subheader = document.getElementById("subheader");
     let tabtitle = document.getElementById("tabtitle");
     subheader.innerHTML = post.title;
     tabtitle.innerHTML = "Consider: " + post.tab;
+}
+
+function assetReload() {
+    var links = document.getElementsByTagName("link");
+    for (var cl in links) {
+        var link = links[cl];
+        if (link.rel === "stylesheet") {
+            link.href += "?t=" + new Date().getDate() + new Date().getHours();
+        }
+    }
+    var scripts = document.getElementsByTagName("script");
+    for (var cl in scripts) {
+        var script = scripts[cl];
+        if (script.src && script.src.endsWith("functions.js")) {
+            script.src += "?t=" + new Date().getDate() + new Date().getHours();
+        }
+    }
 }
