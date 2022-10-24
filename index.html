@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta
+            http-equiv="Cache-Control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
         <title>Consider</title>
         <script src="postindex.js"></script>
         <script src="functions.js"></script>
@@ -54,17 +60,4 @@
 
 <script>
     makeArticlesList();
-    // Force load css daily
-    (function () {
-        var h, a, f;
-        a = document.getElementsByTagName("link");
-        for (h = 0; h < a.length; h++) {
-            f = a[h];
-            if (f.rel.toLowerCase().match(/stylesheet/) && f.href) {
-                var g = f.href.replace(/(&|\?)rnd=\d+/, "");
-                f.href = g + (g.match(/\?/) ? "&" : "?");
-                f.href += "rnd=" + new Date().getDate();
-            }
-        }
-    })();
 </script>
