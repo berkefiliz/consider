@@ -10,9 +10,6 @@
             <div class="hspacer"></div>
             <div id="content">
                 <header id="header"></header>
-                <script>
-                    preparePost(0);
-                </script>
                 <article>
                     <p>
                         Hi! You are not supposed to be here but greetings
@@ -38,3 +35,8 @@
         </div>
     </body>
 </html>
+
+<?php
+include "../serverfunctions.php";
+echo "<script> preparePost(" . getPost("0000") . ") </script>";
+?>

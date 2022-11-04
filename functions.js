@@ -1,4 +1,4 @@
-POSTS = [
+OLD = [
     {
         title: "We are all livestock animals for trees",
         tab: "",
@@ -31,29 +31,47 @@ POSTS = [
     },
 ];
 
-function makeArticlesList() {
+function prepareArticle(post) {
+    post.header = post.title.replace(" ", "_").toLowerCase();
+    post.link = post.uid + "_" + post.header + ".php";
+    post.active = post.active == "1";
+    return post;
+}
+
+function prepareArticlesList(posts) {
+    procposts = {};
+    posts.forEach((post) => {
+        post = prepareArticle(post);
+    });
+    return posts;
+}
+
+function makeArticlesList(posts) {
     const searchbar = document.getElementById("searchbar");
     const articles = document.getElementById("articles");
     const search = searchbar.value.toLowerCase();
     searchbar.value = search;
     articles.innerHTML = "";
-    POSTS.forEach((post) => {
-        if (!search || post.title.toLowerCase().includes(search.trim()))
-            articles.innerHTML += `
+    posts
+        .sort((a, b) => (a.date < b.date ? 1 : -1))
+        .sort((a, b) => (a.active > b.active ? 1 : -1))
+        .forEach((post) => {
+            if (!search || post.name.toLowerCase().includes(search.trim()))
+                articles.innerHTML += `
         <div class="article">
             <div class="article-date" ${
-                post.link ? "" : "style='color: lightgray'"
+                post.active ? "" : "style='color: lightgray'"
             }>
                 ${post.date}
             </div>
             <div class="article-name">
-                <a ${post.link ? "href=posts/" + post.link : ""} ${
-                post.link ? "" : "style='color: lightgray'"
-            }>
-                    ${post.title.replaceAll(
+                <a ${post.active ? "href=posts/" + post.link : ""} ${
+                    post.active ? "" : "style='color: lightgray'"
+                }>
+                    ${post.name.replaceAll(
                         search.trim(),
                         "<span style='text-decoration: underline; filter: brightness(" +
-                            (post.link ? "125" : "90") +
+                            (post.active ? "125" : "90") +
                             "%);'>" +
                             search.trim() +
                             "</span>"
@@ -62,7 +80,7 @@ function makeArticlesList() {
             </div>
         </div>
         `;
-    });
+        });
     if (articles.innerHTML == "") {
         articles.innerHTML = `
             <div class="article">
@@ -79,33 +97,18 @@ function makeArticlesList() {
     }
 }
 
-function preparePost(i) {
-    assetReload();
-    let post = POSTS[POSTS.length - i];
+function preparePost(post) {
+    if (!post) {
+        return;
+    }
+    post = prepareArticle(post);
     let header = document.getElementById("header");
     header.innerHTML = `
-        <a href="/index.html" id="header-text">< Get out</a>
+        <a href="/index.php" id="header-text">< Get out</a>
         <h2 id="subheader"></h2>
     `;
     let subheader = document.getElementById("subheader");
     let tabtitle = document.getElementById("tabtitle");
-    subheader.innerHTML = post.title;
-    tabtitle.innerHTML = "Consider: " + post.tab;
-}
-
-function assetReload() {
-    var links = document.getElementsByTagName("link");
-    for (var cl in links) {
-        var link = links[cl];
-        if (link.rel === "stylesheet") {
-            link.href += "?t=" + new Date().getDate();
-        }
-    }
-    var scripts = document.getElementsByTagName("script");
-    for (var cl in scripts) {
-        var script = scripts[cl];
-        if (script.src && script.src.endsWith("functions.js")) {
-            script.src += "?t=" + new Date().getDate() + new Date().getMinutes();
-        }
-    }
+    subheader.innerHTML = post.name;
+    tabtitle.innerHTML = "Consider: " + post.title;
 }
