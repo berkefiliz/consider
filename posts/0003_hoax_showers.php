@@ -173,12 +173,10 @@
                     <li>...</li>
                 </ul>
                 <p>See what I mean?</p>
-                <img src="https://i0.wp.com/www.richardhughesjones.com/wp-content/uploads/2021/07/6-9.png?resize=1024%2C820&ssl=1" alt="That 6 and 9 comic" />
+                <img src="https://assets.website-files.com/5d4ebd42326ec1aff24296cb/5f5e1d057ae8054bb14c9559_Ambiguity%20effect.jpg" alt="That 6 and 9 comic" />
                 <h4>
-                    Repetition legitimizes. I don't care if the image was
-                    not suitable for these examples in the first place.
-                    Leave me alone -
-                    <a href="https://www.richardhughesjones.com/vuca-leadership/6-9/" target="_blank">Richard Hughes Jones</a>
+                    At this point I am hoarding stock photos -
+                    <a href="https://www.adcocksolutions.com/post/what-is-the-ambiguity-effect" target="_blank">Adcock Solutions</a>
                 </h4>
                 <hr />
                 <p>
