@@ -31,6 +31,10 @@ function makeArticlesList(posts) {
             }>
                 ${post.date}
             </div>
+            <div class="article-views" ${
+                post.active ? "" : "style='visibility: hidden'"
+            }>👁${post.views} &nbsp;
+            </div>
             <div class="article-name">
                 <a ${post.active ? "href=posts/" + post.link : ""} ${
                     post.active ? "" : "style='color: lightgray'"

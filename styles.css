@@ -67,8 +67,14 @@ tr {
 }
 
 .article-date {
-    width: 200px;
+    width: 180px;
     font-family: "Courier Prime";
+}
+
+.article-views {
+    width: 60px;
+    font-family: "Roboto";
+    font-size: 0.7em;
 }
 
 .article-name {
