@@ -1,36 +1,3 @@
-OLD = [
-    {
-        title: "We are all livestock animals for trees",
-        tab: "",
-        date: "2022/--/--",
-        link: null,
-    },
-    {
-        title: "Moon landing was an alien invasion",
-        tab: "",
-        date: "2022/11/--",
-        link: null,
-    },
-    {
-        title: "Showers are blatantly lying to our faces",
-        tab: "Hoax showers",
-        date: "2022/10/24",
-        link: "0003_hoax_showers.html",
-    },
-    {
-        title: "Socks may be interdimensional overlords",
-        tab: "Sock overlords",
-        date: "2022/10/23",
-        link: "0002_sock_overlords.html",
-    },
-    {
-        title: "Vegan tomatoes contain no animal products",
-        tab: "Vegan tomatoes",
-        date: "2022/10/14",
-        link: "0001_vegan_tomatoes.html",
-    },
-];
-
 function prepareArticle(post) {
     post.header = post.title.replace(" ", "_").toLowerCase();
     post.link = post.uid + "_" + post.header + ".php";
