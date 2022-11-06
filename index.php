@@ -25,7 +25,7 @@
             <div id="articles"></div>
             <footer>
                 <p>Want to be informed about new posts?</p>
-                <form id="subscribe" method="post" action="subscribe.php">
+                <form id="subscribe" method="post" action="actions/subscribe.php">
                     <input id="email" type="email" name="email" placeholder="your.email@example.com" />
                     <input type="submit" name="subscribe" class="subs-button" value="Subscribe" />
                     <input type="submit" name="subscribe" class="subs-button" value="Unsubscribe" />
