@@ -107,35 +107,35 @@ include "../templates/post_beginning.php";
     </blockquote>
     <p>
         <a href="/index.html">Consider</a> this scenario: There
-        are three generals in a room, each from a different
-        country that are in war against each other. General A is
+        are two other generals with in a room, each from a different
+        country that are in war against each other. Bob is
         very happy as they have been winning battle after
-        battle. You are sitting there as General B, nervously
-        waiting for a statement from General A. You have made
-        some secret agreements with General C. You believe if
+        battle. You are sitting there, nervously
+        waiting for a statement from Bob. You have made
+        some secret agreements with Geraldç You believe if
         you can fight together for long enough, your common
-        enemy will fall. Then you and General C can both sit
+        enemy will fall. Then you and Gerald can both sit
         down and come to terms in peace.
     </p>
     <p>
-        To your surprise, General A looks at you and says "I
+        To your surprise, Bob looks at you and says "I
         will call all of my troops to make a final attack on
         your capital city." You are aware of the devastating
         effects of this and you are afraid you will not be able
-        to hold the castle for long. General A has the largest
+        to hold the castle for long. Bob has the largest
         army amongst those in the room and there is no way you
         can fight against the entire army by yourself.
     </p>
     <p>
-        General C looks at you, yells "I will back up!" and
+        Gerald looks at you, yells "I will back up!" and
         swiftly leaves the room.
     </p>
     <p>
         This is singlehandedly the worst response you could get.
         Now you are thinking. What did they mean by that? Are
-        you witnessing a betrayal and General C's troops are
+        you witnessing a betrayal and Gerald's troops are
         going to back up and surrender? Or are they also
-        acknowledging the grim announcement from General A and
+        acknowledging the grim announcement from Bob and
         promising you that they will be there to back you up?
         Because in this stupid hypothetical universe (in which
         generals reveal their entire plan to each other as if
@@ -169,14 +169,14 @@ include "../templates/post_beginning.php";
     </h4>
     <hr />
     <p>
-        General C rushes to your capital city in order to take
-        defensive positions before General A arrives. This is
+        Gerald rushes to your capital city in order to take
+        defensive positions before Bob arrives. This is
         it! The end of the era of battles, pain and suffering is
         near! All they need to do is to finf you and make plans
         together. There is one problem though: The city is
         already abandoned.
     </p>
-    <p>General C promptly swears in panic.</p>
+    <p>Gerald promptly swears in panic.</p>
 
     <p>
         <a href="/index.php">
