@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles<?php include '../constants/version.php'?>.css" />
     <title id="tabtitle"></title>
     <script src="../functions.js"></script>
 </head>

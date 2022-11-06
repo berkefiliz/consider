@@ -2,6 +2,16 @@ function prepareArticle(post) {
     post.header = post.title.replace(" ", "_").toLowerCase();
     post.link = post.uid + "_" + post.header + ".php";
     post.active = post.active == "1";
+    post.ncomments = "0";
+    if (typeof NCOMMENTS !== "undefined") {
+        row = NCOMMENTS.filter(function (p) {
+            return p.post == post.uid;
+        });
+        console.log(row)
+        if (row.length > 0) {
+            post.ncomments = row[0].ncomments;
+        }
+    }
     return post;
 }
 
@@ -33,7 +43,15 @@ function makeArticlesList(posts) {
             </div>
             <div class="article-views" ${
                 post.active ? "" : "style='visibility: hidden'"
-            }>👁${post.views} &nbsp;
+            }>
+                <i class='fa fa-eye'></i>
+                <p>${post.views}</p>
+            </div>
+            <div class="article-comments" ${
+                post.active ? "" : "style='visibility: hidden'"
+            }>
+                <i class='fa fa-comment'></i>
+                <p>${post.ncomments}</p>
             </div>
             <div class="article-name">
                 <a ${post.active ? "href=posts/" + post.link : ""} ${
