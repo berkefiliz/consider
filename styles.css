@@ -99,7 +99,7 @@ article {
 
 article {
     line-height: 40px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 blockquote {
@@ -208,6 +208,48 @@ footer > p {
 
 .subs-button:hover {
     color: #e1a278;
+}
+
+#comment {
+    display: flex;
+    gap: 0.5em;
+}
+
+#comment-author {
+    width: 20%;
+    min-width: 200px;
+}
+
+#comment-content {
+    flex: 1;
+}
+
+#comment-section {
+    margin-top: 20px;
+    padding-bottom: 150px;
+}
+
+.cs-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: "row";
+    gap: 0.5em;
+    padding-top: 12px;
+}
+
+.cs-author {
+    width: 20%;
+    min-width: 200px;
+    color: #388087;
+    font-family: "Roboto";
+    font-size: 1.2em;
+}
+
+.cs-content {
+    flex: 1;
+    color: #6fb3b8;
+    font-family: "Roboto";
+    font-size: 1.2em;
 }
 
 @media screen and (max-width: 1000px) {

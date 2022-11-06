@@ -184,7 +184,6 @@ include "../templates/post_beginning.php";
     </p>
 </article>
 
-
 <?php
 include "../templates/post_ending.php";
 include "../serverfunctions.php";

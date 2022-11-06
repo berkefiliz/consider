@@ -82,4 +82,28 @@ function preparePost(post) {
     let tabtitle = document.getElementById("tabtitle");
     subheader.innerHTML = post.name;
     tabtitle.innerHTML = "Consider: " + post.title;
+    let commentPost = document.getElementById("comment-post");
+    commentPost.value = post.uid;
+}
+
+function makeCommentSection(comments) {
+    let innerHTML = "";
+    comments.forEach((c) => {
+        innerHTML += `
+            <div class="cs-holder">
+                <div class="cs-author">${
+                    c.author ? c.author : "Anonymous"
+                }</div>
+                <div class="cs-content">${c.content}</div>
+            </div>
+        `;
+    });
+    if (innerHTML == "") {
+        innerHTML = `
+            <div class="cs-holder">
+                <div style="color: lightgray" class="cs-content">Nothing yet. Be the first one to leave a thought!</div>
+            </div>
+        `;
+    }
+    document.getElementById("comment-section").innerHTML = innerHTML;
 }

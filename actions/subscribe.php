@@ -1,19 +1,17 @@
 <?php
-    include "serverfunctions.php";
+    include "../serverfunctions.php";
     $action = "fail";
     if(array_key_exists('email', $_POST) and array_key_exists('subscribe', $_POST)) {
         $email = $_POST['email'];
         $subscribe = $_POST['subscribe'];
         if ($email !== '' and $subscribe !== '') {
-            insert($email, $_POST['subscribe']);
+            $action="success";
+            insertSubs($email, $_POST['subscribe']);
         }
     }
-    function insert($email, $type) {
+    function insertSubs($email, $type) {
         $action = $type;
-        $servername = "sql213.main-hosting.eu";
-        $database = "u968648861_consider";
-        $username = "u968648861_berkefiliz";
-        $password = "M#+U1@ki05~b*h4P!H4u79;S";
+        global $servername, $username, $password, $database;
 
         echo $type;
         
@@ -26,5 +24,4 @@
         $conn -> close();
     }
     
-    header("Location:index.php?action=".$action);
-?>
+    header("Location:../index.php?action=".$action);
