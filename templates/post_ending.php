@@ -11,6 +11,12 @@
 <h2>What others thought about</h2>
 <div id="comment-section"></div>
 
+<script>
+    if (window.location.href.endsWith("?action=success")) {
+        document.getElementById('comments').scrollIntoView();
+    }
+</script>
+
 </div>
 <div class="hspacer"></div>
 </div>
