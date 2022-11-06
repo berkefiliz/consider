@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="../styles<?php include '../constants/version.php'?>.css" />
     <title id="tabtitle"></title>
-    <script src="../functions.js"></script>
+    <script src="../functions<?php include '../constants/version.php' ?>.js"></script>
 </head>
 
 <body>

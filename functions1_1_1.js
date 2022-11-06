@@ -102,6 +102,8 @@ function preparePost(post) {
     tabtitle.innerHTML = "Consider: " + post.title;
     let commentPost = document.getElementById("comment-post");
     commentPost.value = post.uid;
+    let commentContent = document.getElementById("comment-content");
+    commentContent.placeholder = post.csplaceholder;
 }
 
 function makeCommentSection(comments) {

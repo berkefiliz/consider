@@ -3,7 +3,7 @@
 
 <head>
     <title>Consider</title>
-    <script src="functions.js"></script>
+    <script src="functions<?php include 'constants/version.php' ?>.js"></script>
     <?php
     include "serverfunctions.php";
     getPostIndex();

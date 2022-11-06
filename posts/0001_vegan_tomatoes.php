@@ -8,7 +8,7 @@ include "../templates/post_beginning.php";
         government secret, and being one who has to explain
         every process between the creation of the universe and
         why they were very upset when they left McDonald's at
-        4:37PM on a rainy Saturday evening right before Gerald's
+        4:37pm on a rainy Saturday evening right before Gerald's
         twenty-fourth birthday party to take place in Vondelpark
         near its Amsterveenseweg entrance. Sometimes I believe
         these people are the #1 reason behind the increasing
