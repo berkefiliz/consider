@@ -107,12 +107,12 @@ include "../templates/post_beginning.php";
     </blockquote>
     <p>
         <a href="/index.html">Consider</a> this scenario: There
-        are two other generals with in a room, each from a different
-        country that are in war against each other. Bob is
+        are three generals in a room including yourself, each from a different
+        country that is in war against each other. Bob is
         very happy as they have been winning battle after
         battle. You are sitting there, nervously
         waiting for a statement from Bob. You have made
-        some secret agreements with Geraldç You believe if
+        some secret agreements with Gerald. You believe if
         you can fight together for long enough, your common
         enemy will fall. Then you and Gerald can both sit
         down and come to terms in peace.
@@ -136,7 +136,7 @@ include "../templates/post_beginning.php";
         you witnessing a betrayal and Gerald's troops are
         going to back up and surrender? Or are they also
         acknowledging the grim announcement from Bob and
-        promising you that they will be there to back you up?
+        promising you that they will be there to back <i>you</i> up?
         Because in this stupid hypothetical universe (in which
         generals reveal their entire plan to each other as if
         this is an anime episode) the fastest way of
