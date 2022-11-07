@@ -172,11 +172,11 @@ include "../templates/post_beginning.php";
         Gerald rushes to your capital city in order to take
         defensive positions before Bob arrives. This is
         it! The end of the era of battles, pain and suffering is
-        near! All they need to do is to finf you and make plans
+        near! All they need to do is to find you and make plans
         together. There is one problem though: The city is
         already abandoned.
     </p>
-    <p>Gerald promptly swears in panic.</p>
+    <p>Gerald promptly swears in panic. "Who is going to back up now?"</p>
 
     <p>
         <a href="/index.php">
