@@ -121,7 +121,7 @@ function makeCommentSection(comments) {
     if (innerHTML == "") {
         innerHTML = `
             <div class="cs-holder">
-                <div style="color: lightgray" class="cs-content">Nothing yet. Be the first one to leave a thought!</div>
+                <div style="color: lightgray" class="cs-content">Nothing yet. Be the first one to consider!</div>
             </div>
         `;
     }

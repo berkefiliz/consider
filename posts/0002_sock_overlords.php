@@ -215,5 +215,4 @@ include "../templates/post_beginning.php";
 <?php
 include "../templates/post_ending.php";
 include "../serverfunctions.php";
-echo "<script> preparePost(" . getPost("0002") . ") </script>";
-?>
+echo "&lt;script> preparePost(\" . getPost('0002') . \") &lt;/script>"; ?>

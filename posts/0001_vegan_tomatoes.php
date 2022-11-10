@@ -226,8 +226,7 @@ include "../templates/post_beginning.php";
 <?php
 include "../templates/post_ending.php";
 include "../serverfunctions.php";
-echo "<script> preparePost(" . getPost("0001") . ") </script>";
-?>
+echo "&lt;script> preparePost(\" . getPost('0001') . \") &lt;/script>"; ?>
 
 <!-- Post-specific joke -->
 
